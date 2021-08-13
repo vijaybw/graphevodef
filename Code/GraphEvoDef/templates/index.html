@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mdb.css') }}">
+<style>
+     .content-section {
+    padding: 100px 20px;
+  }
+    div.ex3 {
+  height: 400px;
+  overflow: auto;
+}
+</style>
+
+</head>
+<body class="bg-white content-section">
+  <nav class="bg-primary navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container px-1">
+        <a class="navbar-brand waves-effect" href="/">
+            <strong class="white-text"></strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+    </div>
+  </nav>
+<div class='container mt-4'>
+    <div class="row justify-content-center ">
+        <form method="POST" action="" enctype="multipart/form-data" class="border border-light p-5">
+            {{ form.hidden_tag() }}
+            <fieldset>
+            <label for="project_name">Project Name</label>
+            {{ form.project_name(class="form-control mb-4") }}
+        <div class='text-center'>
+            <label class="text-center btn btn-primary text-white">
+                Source File
+                {% if form.project_file.errors %}
+                {{ form.project_file(class="form-control form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.project_file.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% else %}
+            {{ form.project_file(class="form-control-file ") }}
+            {% endif %}
+            </label>
+        </div>
+            </fieldset>
+        {{ form.submit(class="btn btn-primary") }}
+        </form>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small black fixed-bottom">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="">ProjectName</a> Developed by: <a href="">Rakan Alanazi</a>
+    </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js//jquery.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js//popper.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js//bootstrap.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js//mdb.js')}}"></script>
+</body>
+</html>

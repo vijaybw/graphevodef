@@ -1,0 +1,11 @@
+*.iml
+.idea/
+out/
+classes/
+build/
+.gradle/
+report/*
+venv/
+scripts/*.csv
+scripts/__pycache__
+*.pyc

@@ -1,0 +1,14 @@
+Granule;Ca;Ce;I;A;Dn;
+org;0;0;0.0;0.0;1.0;
+org.apache.tools.mail;1;0;0.0;0.0;1.0;
+org.apache.tools;0;0;0.0;0.0;1.0;
+org.apache;0;0;0.0;0.0;1.0;
+META-INF;0;0;0.0;0.0;1.0;
+org.apache.tools.ant.util;4;4;0.5;0.11;0.39;
+org.apache.tools.ant.taskdefs;2;10;0.83;0.03;0.14;
+org.apache.tools.tar;1;0;0.0;0.0;1.0;
+org.apache.tools.ant.util.regexp;2;1;0.33;0.25;0.42;
+org.apache.tools.ant.taskdefs.compilers;1;5;0.83;0.16;0.01;
+org.apache.tools.ant.types;3;4;0.57;0.02;0.41;
+;0;0;0.0;0.0;1.0;
+org.apache.tools.ant;11;1;0.08;0.12;0.8;

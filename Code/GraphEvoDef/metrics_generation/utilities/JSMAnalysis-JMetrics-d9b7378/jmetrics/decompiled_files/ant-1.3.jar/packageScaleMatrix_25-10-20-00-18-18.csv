@@ -1,0 +1,14 @@
+;org;org.apache.tools.mail;org.apache.tools;org.apache;META-INF;org.apache.tools.ant.util;org.apache.tools.ant.taskdefs;org.apache.tools.tar;org.apache.tools.ant.util.regexp;org.apache.tools.ant.taskdefs.compilers;org.apache.tools.ant.types;;org.apache.tools.ant;
+org;0;0;0;0;0;0;0;0;0;0;0;0;0;
+org.apache.tools.mail;0;0;0;0;0;0;0;0;0;0;0;0;0;
+org.apache.tools;0;0;0;0;0;0;0;0;0;0;0;0;0;
+org.apache;0;0;0;0;0;0;0;0;0;0;0;0;0;
+META-INF;0;0;0;0;0;0;0;0;0;0;0;0;0;
+org.apache.tools.ant.util;0;0;0;0;0;0;0;0;2;0;0;0;2;
+org.apache.tools.ant.taskdefs;0;1;0;0;0;2;0;1;0;1;2;0;3;
+org.apache.tools.tar;0;0;0;0;0;0;0;0;0;0;0;0;0;
+org.apache.tools.ant.util.regexp;0;0;0;0;0;0;0;0;0;0;0;0;1;
+org.apache.tools.ant.taskdefs.compilers;0;0;0;0;0;0;2;0;0;0;1;0;2;
+org.apache.tools.ant.types;0;0;0;0;0;1;0;0;0;0;0;0;3;
+;0;0;0;0;0;0;0;0;0;0;0;0;0;
+org.apache.tools.ant;0;0;0;0;0;1;0;0;0;0;0;0;0;

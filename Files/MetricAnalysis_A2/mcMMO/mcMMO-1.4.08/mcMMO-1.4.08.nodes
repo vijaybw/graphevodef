@@ -1,0 +1,14 @@
+0 com.gmail.nossr50.mcMMO:setupFilePaths
+1 com.gmail.nossr50.mcMMO:getDataFolder
+2 com.gmail.nossr50.mcMMO:onEnable
+3 com.gmail.nossr50.mcMMO:getLogger
+4 com.gmail.nossr50.mcMMO:debug
+5 com.gmail.nossr50.mcMMO:onDisable
+6 com.gmail.nossr50.mcMMO:registerCustomRecipes
+7 com.gmail.nossr50.mcMMO:getServer
+8 com.gmail.nossr50.mcMMO:checkModConfigs
+9 com.gmail.nossr50.mcMMO:registerEvents
+10 com.gmail.nossr50.mcMMO:getDescription
+11 com.gmail.nossr50.mcMMO:fixFilePaths
+12 com.gmail.nossr50.mcMMO:checkForUpdates
+13 com.gmail.nossr50.mcMMO:getFile

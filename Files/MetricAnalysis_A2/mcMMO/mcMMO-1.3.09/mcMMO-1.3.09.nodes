@@ -1,0 +1,12 @@
+0 com.gmail.nossr50.mcMMO:setupFilePaths
+1 com.gmail.nossr50.mcMMO:getDataFolder
+2 com.gmail.nossr50.mcMMO:onEnable
+3 com.gmail.nossr50.mcMMO:getDescription
+4 com.gmail.nossr50.mcMMO:onDisable
+5 com.gmail.nossr50.mcMMO:getServer
+6 com.gmail.nossr50.mcMMO:getTNTPlayer
+7 com.gmail.nossr50.mcMMO:getLogger
+8 com.gmail.nossr50.mcMMO:registerCommands
+9 com.gmail.nossr50.mcMMO:getCommand
+10 com.gmail.nossr50.config.Config:getCommandmcMMOEnabled
+11 com.gmail.nossr50.mcMMO:getFile

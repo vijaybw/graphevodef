@@ -1,0 +1,63 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+defaultTasks 'compileJava', 'compileTestJava'
+
+mainClassName = 'fr.ubordeaux.jmetrics.Main'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
+    compile 'org.eclipse.jdt:org.eclipse.jdt.core:3.16.0'
+    compile 'commons-cli:commons-cli:1.4'
+}
+
+project.libsDirName = '../out/jar'
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        java.outputDir = file('out/bin')
+    }
+    test{
+        java{
+            srcDirs = ['test']
+        }
+        java.outputDir = file('out/test')
+    }
+}
+
+application {
+    mainClassName = 'fr.ubordeaux.jmetrics.Main'
+}
+
+run {
+    standardInput = System.in
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': mainClassName
+        )
+    }
+    from { (configurations.runtime).collect { it.isDirectory() ? it : zipTree(it) } } {
+        exclude 'META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA'
+    }
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << "-Xlint:all"
+}

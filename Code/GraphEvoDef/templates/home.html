@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Rakan Alanazi">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title></title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+      <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+      <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+      <link href="{{url_for('static', filename='css/mdb.css')}}" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/vis-network/styles/vis-network.min.css">
+      <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+<style>
+
+
+.btn-circle {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(7,121,222,1) 0%, rgba(20,72,140,1) 90% );
+}
+
+</style>
+
+   </head>
+   <body>
+   {% include 'versionsPanel.html' %}
+      <!-- Left Panel -->
+      <div id="mynetwork">
+      </div>
+
+      <div id="leftpanel" class="leftpanel">
+
+         <div id="lefttoppanel" class="lefttoppanel">
+            <div class="card text-center mb-2">
+               <div class="card-header bg-primary p-3">
+                 <span class=" float-left h4 font-weight-bold text-white" >Project : {{ name }} <span class="badge badge-primary badge-warning"> {{ len }} </span></span>
+               </div>
+             <div class="card-body">
+               <form class="form-inline md-form form-sm mt-0">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                  <input autocomplete="off" type="search" class="form-control mdb-autocomplete-sm ml-3 w-75" id='search' placeholder="Search Node ID" aria-label="Search">
+               </form>
+             <h4 class="my-0 font-weight-normal">Select Version</h4>
+                <div class="dropdown show">
+                  <select class="browser-default custom-select" id="selectedversion">
+                    <!-- For loop logic of jinja template -->
+                    {%for i in range(0, len)%}
+                    <!-- Add versions -->
+                        {% if i ==(len-1) %}
+                            <<option selected value="{{versions[i]}}">{{versions[i]}}</option>
+                        {% else %}
+                            <option value="{{versions[i]}}">{{versions[i]}}</option>
+                        {% endif %}
+
+                    {%endfor%}
+                  </select>
+                </div>
+             </div>
+            </div>
+            
+            <div class="card-footer white">
+               
+            </div>
+         </div>
+       
+         {% include 'nodePanel.html' %}
+
+      </div>
+
+   </div>
+
+ 
+    <!-- Graph Navigation Button -->
+    <div class="px-4 mb-3 fixed-bottom justify-content-end">
+      <div class="d-flex justify-content-start">
+         <a id="zoomin" type="button" class="btn btn-primary btn-circle m-1">
+         <i class="fas fa-plus fa-lg"></i>
+         </a>
+         <a id="zoomout" type="button" class="btn btn-primary btn-circle">
+         <i class="fas fa-minus fa-lg"></i>
+         </a>
+         <a id="zoomfit" type="button" class="btn btn-primary btn-circle">
+         <i class="fas fa-arrows-alt fa-lg"></i>
+         </a>&nbsp;&nbsp;&nbsp;
+          <h1>LEGEND</h1>
+          <button style="background-color: blue;border-radius: 75%;color: white">New</button>
+          <button style="background-color: lightblue;border-radius: 75%;color: white">Existing</button>
+          <button style="background-color: red;border-radius: 75%;color: white">Defective</button>
+          <button style="background-color: orange;border-radius: 75%;color: white">Existing Defective</button>
+      </div>
+   </div>
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+      <script type="text/javascript" src="  {{ url_for('static', filename='js/popper.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js')}}"></script>      
+      <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.js')}}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/graph.js')}}"></script>
+
+
+
+   </body>
+</html>
