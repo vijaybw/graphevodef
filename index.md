@@ -4,9 +4,9 @@ Understanding software evolution is essential for software development tasks, in
 
 ### Screenshots
 Creating new project through UI
-  Uploading Jar files
-  Viewing complete call graph
-  Viewing Class metrics
-![Screenshot2](https://user-images.githubusercontent.com/1021061/129414305-877c6070-4f59-4b62-ad35-4cb68bd1f3d2.png)
-![Screenshot0](https://user-images.githubusercontent.com/1021061/129414311-97556e41-622d-4b07-9b77-22e41c3ba775.png)
-<img width="960" alt="Screenshot3" src="https://user-images.githubusercontent.com/1021061/129414323-e73c5772-ee23-4607-abdf-ffbe33541e0e.png">
+  # Uploading Jar files
+  ![Screenshot2](https://user-images.githubusercontent.com/1021061/129414305-877c6070-4f59-4b62-ad35-4cb68bd1f3d2.png)
+  # Viewing complete call graph
+  ![Screenshot0](https://user-images.githubusercontent.com/1021061/129414311-97556e41-622d-4b07-9b77-22e41c3ba775.png)
+  # Viewing Class metrics
+  <img width="960" alt="Screenshot3" src="https://user-images.githubusercontent.com/1021061/129414323-e73c5772-ee23-4607-abdf-ffbe33541e0e.png">
