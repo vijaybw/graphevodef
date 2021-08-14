@@ -10,3 +10,7 @@ Understanding software evolution is essential for software development tasks, in
   ![Screenshot0](https://user-images.githubusercontent.com/1021061/129414311-97556e41-622d-4b07-9b77-22e41c3ba775.png)
   ## Viewing Class metrics
   <img width="960" alt="Screenshot3" src="https://user-images.githubusercontent.com/1021061/129414323-e73c5772-ee23-4607-abdf-ffbe33541e0e.png">
+ 
+### Details of Training Set
+  ![image](https://user-images.githubusercontent.com/1021061/129462712-893dd5c7-60b6-4f08-909f-328056580b18.png)
+
