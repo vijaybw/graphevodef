@@ -15,23 +15,7 @@ Understanding software evolution is essential for software development tasks, in
   ![image](https://user-images.githubusercontent.com/1021061/129462712-893dd5c7-60b6-4f08-909f-328056580b18.png)
 
 ### Metric Values
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 12px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
+
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>Application</th><th>Version</th><th>Nodes</th><th>Edges</th><th>Paths</th><th>Avg-Degree</th><th>Clustering Coef</th><th>Diameter</th><th>Modularity</th></tr></thead><tbody>
  <tr><td>Antlr</td><td>antlr-4.0-complete</td><td>1897</td><td>3718</td><td>60290</td><td>1.96</td><td>0.038</td><td>16</td><td>0.853</td></tr>
